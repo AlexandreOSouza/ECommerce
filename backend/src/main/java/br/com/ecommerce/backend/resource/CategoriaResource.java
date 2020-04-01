@@ -1,25 +1,26 @@
 package br.com.ecommerce.backend.resource;
 
 import br.com.ecommerce.backend.domain.Categoria;
+import br.com.ecommerce.backend.services.CategoriaService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
-import java.util.List;
 
 @RestController
 @RequestMapping(value = "/categorias")
 public class CategoriaResource {
 
-    @RequestMapping(method = RequestMethod.GET)
-    public List<Categoria> listar() {
+    @Autowired
+    private CategoriaService service;
 
-        Categoria cat1 = new Categoria(1, "Informatica");
-        Categoria cat2 = new Categoria(2, "Escritorio");
-
-        List<Categoria> lista = Arrays.asList(cat1, cat2);
-
-        return lista;
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public ResponseEntity<?> find(@PathVariable Integer id) {
+        Categoria obj = service.buscar(id);
+        return ResponseEntity.ok().body(obj);
     }
 }
