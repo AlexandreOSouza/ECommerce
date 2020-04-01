@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d53f7caf-b87d-4c54-ac89-68e110498845" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1Zv0PTBD35GSQxM4RJwEMkXg2XP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RunManager">
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.ecommerce.backend.backend.BackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d53f7caf-b87d-4c54-ac89-68e110498845" name="Default Changelist" comment="" />
+      <created>1585704235529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585704235529</updated>
+      <workItem from="1585704240817" duration="971000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="144" width="424" height="515" key="FileChooserDialogImpl" timestamp="1585704591159">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="466" y="144" width="424" height="515" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1585704591159" />
+    <state width="1320" height="149" key="GridCell.Tab.0.bottom" timestamp="1585754830809">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="149" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1585754830809" />
+    <state width="1320" height="149" key="GridCell.Tab.0.center" timestamp="1585754830807">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="149" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1585754830807" />
+    <state width="1320" height="149" key="GridCell.Tab.0.left" timestamp="1585754830805">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="149" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1585754830805" />
+    <state width="1320" height="149" key="GridCell.Tab.0.right" timestamp="1585754830808">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="149" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1585754830808" />
+    <state width="1320" height="149" key="GridCell.Tab.1.bottom" timestamp="1585754830815">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="149" key="GridCell.Tab.1.bottom/0.30.1366.738@0.30.1366.738" timestamp="1585754830815" />
+    <state width="1320" height="149" key="GridCell.Tab.1.center" timestamp="1585754830812">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="149" key="GridCell.Tab.1.center/0.30.1366.738@0.30.1366.738" timestamp="1585754830812" />
+    <state width="1320" height="149" key="GridCell.Tab.1.left" timestamp="1585754830811">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="149" key="GridCell.Tab.1.left/0.30.1366.738@0.30.1366.738" timestamp="1585754830811" />
+    <state width="1320" height="149" key="GridCell.Tab.1.right" timestamp="1585754830814">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1320" height="149" key="GridCell.Tab.1.right/0.30.1366.738@0.30.1366.738" timestamp="1585754830814" />
+    <state x="187" y="34" width="992" height="733" key="SettingsEditor" timestamp="1585704594411">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="187" y="34" width="992" height="733" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1585704594411" />
+    <state x="376" y="538" key="com.intellij.ide.util.TipDialog" timestamp="1585770113776">
+      <screen x="0" y="342" width="1366" height="738" />
+    </state>
+    <state x="376" y="538" key="com.intellij.ide.util.TipDialog/0.342.1366.738/1366.0.1920.1080@0.342.1366.738" timestamp="1585770113776" />
+  </component>
+</project>
