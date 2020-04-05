@@ -7,8 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.Objects;
+import java.util.*;
 
 @Getter
 @Setter
@@ -31,6 +30,9 @@ public class Pedido implements Serializable {
     @ManyToOne
     @JoinColumn(name = "endereco_entrega_id")
     private Endereco enderecoEntrega;
+
+    @OneToMany(mappedBy = "id.pedido") // id -> ItemProduto
+    private Set<ItemPedido> itens = new HashSet<>();
 
     public Pedido(Integer id, Date instante, Cliente cliente, Endereco enderecoEntrega) {
         this.id = id;
