@@ -1,6 +1,7 @@
 package br.com.ecommerce.backend.domain;
 
 import br.com.ecommerce.backend.domain.enums.TipoCliente;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -23,6 +24,7 @@ public class Cliente implements Serializable {
     private String cpfOuCnpj;
     private Integer tipo;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "cliente")
     private List<Endereco> enderecos = new ArrayList<>();
 
@@ -39,11 +41,11 @@ public class Cliente implements Serializable {
         this.tipo = tipo.getCod();
     }
 
-    public void setTipoCliente(TipoCliente tipo) {
+    public void setTipo(TipoCliente tipo) {
         this.tipo = tipo.getCod();
     }
 
-    public TipoCliente getTipoCliente() {
+    public TipoCliente getTipo() {
         return TipoCliente.toEnum(tipo);
     }
 
