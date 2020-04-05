@@ -1,5 +1,6 @@
 package br.com.ecommerce.backend.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,10 +16,12 @@ import java.io.Serializable;
 @Embeddable // Subtipo
 public class ItemPedidoPK implements Serializable {
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "pedido_id")
     private Pedido pedido;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "produto_id")
     private Produto produto;

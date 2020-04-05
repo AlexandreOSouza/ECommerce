@@ -1,5 +1,6 @@
 package br.com.ecommerce.backend.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,6 +17,7 @@ import java.util.Objects;
 public class ItemPedido implements Serializable {
 
 
+    @JsonIgnore
     @EmbeddedId
     private ItemPedidoPK id = new ItemPedidoPK(); // Atributo composto
 
@@ -32,6 +34,7 @@ public class ItemPedido implements Serializable {
         this.quantidade = quantidade;
     }
 
+    @JsonIgnore
     public Pedido getPedido() {
         return id.getPedido();
     }
