@@ -1,13 +1,8 @@
 package br.com.ecommerce.backend;
 
-import br.com.ecommerce.backend.domain.Categoria;
-import br.com.ecommerce.backend.domain.Cidade;
-import br.com.ecommerce.backend.domain.Estado;
-import br.com.ecommerce.backend.domain.Produto;
-import br.com.ecommerce.backend.repositoreis.CategoriaRepository;
-import br.com.ecommerce.backend.repositoreis.CidadeRepository;
-import br.com.ecommerce.backend.repositoreis.EstadoRepository;
-import br.com.ecommerce.backend.repositoreis.ProdutoRepository;
+import br.com.ecommerce.backend.domain.*;
+import br.com.ecommerce.backend.domain.enums.TipoCliente;
+import br.com.ecommerce.backend.repositoreis.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -29,6 +24,12 @@ public class BackendApplication implements CommandLineRunner {
 
     @Autowired
     private CidadeRepository cidadeRepository;
+
+    @Autowired
+    private ClienteRepository clienteRepository;
+
+    @Autowired
+    private EnderecoRepository enderecoRepository;
 
 
     public static void main(String[] args) {
@@ -68,6 +69,17 @@ public class BackendApplication implements CommandLineRunner {
         estadoRepository.saveAll(Arrays.asList(est1, est2));
         cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
 
+
+        Cliente cli1 = new Cliente(null, "Maria Silva", "maria@gmail.com", "36985214712", TipoCliente.PESSOAFISICA);
+        cli1.getTelefones().addAll(Arrays.asList("2736623", "93838963"));
+
+        Endereco e1 = new Endereco(null, "Rua Flores", "300", "Apto 203", "Jardim", "39852245", cli1, c1);
+        Endereco e2 = new Endereco(null, "Avenida Matos", "105", "Sala 800", "Centro", "52148963", cli1, c2);
+
+        cli1.getEnderecos().addAll(Arrays.asList(e1, e2));
+
+        clienteRepository.saveAll(Arrays.asList(cli1));
+        enderecoRepository.saveAll(Arrays.asList(e1, e2));
 
     }
 }
