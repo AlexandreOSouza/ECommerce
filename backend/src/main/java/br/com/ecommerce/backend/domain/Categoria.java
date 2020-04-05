@@ -24,7 +24,6 @@ public class Categoria implements Serializable {
     private Integer id;
     private String nome;
 
-    @JsonManagedReference // Retorna a lista de produtos
     @ManyToMany(mappedBy = "categorias")
     private List<Produto> produtos = new ArrayList<>();
 
